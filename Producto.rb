@@ -37,6 +37,7 @@ class Producto
     if estoyEnPromocion
       promocion.initialize
     else
+    end
   end
 
   def calcularPrecioProducto(precio)
