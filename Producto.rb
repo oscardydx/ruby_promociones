@@ -13,23 +13,23 @@ class Producto
     @estoyEnPromocion = params[:estoyEnPromocion]
   end
 
-  def codigoProducto
+  def get_codigoProducto
     @codigoProducto
   end
 
-  def nombre
+  def get_nombre
     @nombre
   end
 
-  def precio
+  def get_precio
     @precio
   end
 
-  def unidad
+  def get_unidad
     @unidad
   end
 
-  def estoyEnPromocion
+  def get_estoyEnPromocion
     @estoyEnPromocion
   end
 
