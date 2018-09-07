@@ -5,7 +5,8 @@ class Menu
       puts 'Por favor seleccione una opcion:'
       puts '1. Registrar productos'
       puts '2. Ejecutar caja'
-      puts '3. Salir de la aplicacion'
+      puts '3. Registrar promociones'
+      puts '4. Salir de la aplicacion'
       ejecutarOpcion(gets.chomp.to_i)
       mostrarMenu()
   end
@@ -15,8 +16,10 @@ class Menu
       when 1
         registrarProductos
       when 2
-
+      
       when 3
+        
+      when 4
         system('exit')
       else
       puts 'Ingresó una opcion incorrecta'
