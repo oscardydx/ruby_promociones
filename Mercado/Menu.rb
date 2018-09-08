@@ -43,10 +43,10 @@ class Menu
     if producto[:estoyEnPromocion]=="s" || producto[:estoyEnPromocion]=="S"
       mostrarListaPromociones
       seleccionarTipoPromocion(gets.chomp.to_i)
-      @simulacion.registrarPromocion()
     end
   end
   def seleccionarTipoPromocion(n)
+    x=0, y=0
     case n
     when 1
       puts 'Ingrese la cantidad minima a comprar'
@@ -95,7 +95,7 @@ class Menu
   end
 
   def ejecutarCaja
-
+¿
   end
 end
 main = Menu.new

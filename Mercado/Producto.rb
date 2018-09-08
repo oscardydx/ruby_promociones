@@ -19,7 +19,7 @@ class Promocion
   def initialize(tipoPromocion,x,y)
     @tipoPromocion=seleccionarTipoPromocion(tipoPromocion,x,y)
   end
-  def seleccionarTipoPromocion(i)
+  def seleccionarTipoPromocion(i,x,y)
     case i
     when 1
       inicializarlleveNpagueM(x,y)

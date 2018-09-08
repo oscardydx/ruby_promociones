@@ -25,7 +25,10 @@ class Simulacion
     cadena="#Codigo ||  Producto ";
     contador=1
     for objeto in @listaProductos
-      cadena+="\n|#{contador}: #{objeto.to_string}"
+      if(contador!=1)
+        cadena+="|"
+      end
+      cadena+="\n#{contador}: #{objeto.to_string}"
       contador+=1
     end
     return cadena
