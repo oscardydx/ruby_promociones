@@ -22,7 +22,7 @@ class Menu
     when 3
       ejecutarCaja
     when 4
-      system.exit(0)
+      !exit
     else
       puts 'Por favor digite una opcion validad'
     end
@@ -87,9 +87,11 @@ class Menu
     codigo=gets.chomp.to_i
     temp=@simulacion.eliminarProducto(codigo)
     if(temp==-1)
-      puts ''
+      puts 'Producto no encontrado.'
+    else
+      puts "Se ha eliminado con exito #{temp.to_string}"
     end
-    puts "Se ha eliminado con exito #{temp}"
+
   end
 
   def ejecutarCaja

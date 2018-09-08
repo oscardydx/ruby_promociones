@@ -11,10 +11,10 @@ class Simulacion
   end
 
   def eliminarProducto(index)
-    if index<0 || index>=@listaProductos.lenght
-      return
+    if index<0 || index>@listaProductos.length
+      return -1
     end
-    return listaProductos.delete(index)
+    return @listaProductos.delete_at(index-1)
   end
 
   def registrarPromocion(tipoPromocion,x,y)
@@ -22,10 +22,10 @@ class Simulacion
   end
 
   def mostrarListaProductos
-    cadena="#Codigo    ||      Producto ";
+    cadena="#Codigo ||  Producto ";
     contador=1
     for objeto in @listaProductos
-      cadena+="\n|#{contador}: #{objeto}"
+      cadena+="\n|#{contador}: #{objeto.to_string}"
       contador+=1
     end
     return cadena

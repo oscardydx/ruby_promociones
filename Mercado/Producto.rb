@@ -10,7 +10,7 @@ class Producto
   def crearPromocion(tipoPromocion,x,y)
     @tipoPromocion=Promocion.new(tipoPromocion,x,y)
   end
-  def to_s
+  def to_string
     "Nombre: #{@nombreProducto}, Precio: #{@precioProducto}, Unidad: #{@unidad}"
   end
 end
